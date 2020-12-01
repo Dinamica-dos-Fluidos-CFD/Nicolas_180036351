@@ -1,0 +1,14 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+template1 = GetTemplate(TemplateName="Mesh")
+system1 = GetSystem(Name="Geom")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+system2 = template1.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system1)
+meshComponent1 = system2.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system2.GetContainer(ComponentName="Mesh")
+mesh1.Edit()

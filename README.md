@@ -25,4 +25,5 @@ NACA0012
 Utilizando o Software Ansys 2020 R1, deseja-se modelar um domínio de cálculo, gerar uma geometria baseada na modelagem, gerar uma malha para o domínio, estabelecimento de condições de contorno, determinar com a simulação coeficientes de arrasto e sustentação. Para isso, adota-se as hipóteses de escoamento 2D, Turbulento e isotérmico.
 
 Para o aerfólio, pode-se ser encontrado na internet sites que disponibilizam os pontos para o mapeamento do perfil.
+
 ![image] (https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/image.png)

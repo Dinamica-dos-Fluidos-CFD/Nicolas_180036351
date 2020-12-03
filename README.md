@@ -38,3 +38,15 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ### Metodologia
   A mmetodologia CFD foi escolhida pois facilita as solução através de um processo interativo que também é econômico. O software usado será ANSYS 2020 R1 em sua função Fluent.
+  
+  ## Modelagem
+  ### Geometria
+  Utilizando de sites pôde-se obter 
+  ### Malha
+  
+  ## Simulação
+  ### Pré-Processamento
+  ### Pós-Processamento
+
+  ## Resultados
+  ### Conclusão

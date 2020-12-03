@@ -17,7 +17,7 @@ https://docs.google.com/document/d/1m7Fxxsr3LBvPi7_CzYectr7dN7xKL5gKJJH17FIdZ90/
 
 # **Projeto em CFD sobre Escoamento em Perfil Aerodinâmico**
 
-## Modelagem
+## Introdução
 
 ### Objetivo
 Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012. Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
@@ -33,3 +33,9 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ### Precisão dos Resultados 
   Deseja-se uma precisão de ao menos 5% entre os valores obtidos na simulação e os encontrados na validação do aerofólio feita pela NASA
+  
+  ### Prazo
+  04/12/2020
+  
+  ### Metodologia
+  A mmetodologia CFD foi escolhida pois facilita as solução através de um processo interativo que também é econômico. O software usado será ANSYS 2020 R1 em sua função Fluent.

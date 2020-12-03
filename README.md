@@ -1,6 +1,5 @@
 # Nicolas_180036351
 Reositório para Projeto em CFD sobre Escoamento em Pefil Aerodinâmico
-https://docs.google.com/document/d/1m7Fxxsr3LBvPi7_CzYectr7dN7xKL5gKJJH17FIdZ90/edit?usp=sharing
 
 ##NÃO APAGAR ESTA PARTE!!!##
 ---

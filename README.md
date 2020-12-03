@@ -17,13 +17,19 @@ https://docs.google.com/document/d/1m7Fxxsr3LBvPi7_CzYectr7dN7xKL5gKJJH17FIdZ90/
 
 # **Projeto em CFD sobre Escoamento em Perfil Aerodinâmico**
 
-**Introdução**
-Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012, através dessa simulação pode-se obter valores de coeficientes de arrasto e sustentação para um ângulo de ataque de 12º. Também deseja-se determinar se ocorre o fenômeno de stall nessa angulação.Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
+## Modelagem
 
-NACA0012
-**Métodos**
-Utilizando o Software Ansys 2020 R1, deseja-se modelar um domínio de cálculo, gerar uma geometria baseada na modelagem, gerar uma malha para o domínio, estabelecimento de condições de contorno, determinar com a simulação coeficientes de arrasto e sustentação. Para isso, adota-se as hipóteses de escoamento 2D, Turbulento e isotérmico.
+### Objetivo
+Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012. Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
 
-Para o aerfólio, pode-se ser encontrado na internet sites que disponibilizam os pontos para o mapeamento do perfil.
-
-![image] (https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/image.png)
+  ### Requisitos de Solução
+  Obter através da simulação computacional valores de coeficientes de arrasto e sustentação para um ângulo de ataque de 12º e identificar a ocorrência do fenômeno de stall nessa angulação
+ 
+  ### Finalidade do Projeto
+  Com finalidade acadêmica, o projeto visa introduzir os alunos à Fluidodinâmica Computacional (CFD) e a solução de problemas no campo da Dinâmica dos Fluidos.
+  
+  ### Hipótese de Simplificações 
+  Analisando o nível de complexidade do problema, adota-se as hipóteses de escoamento 2D, Turbulento e isotérmico. Tais aproximações facilitarão os cálculos e a modelagem do problema com mudanças desprezíveis na precisão do resultado.
+  
+  ### Precisão dos Resultados 
+  Deseja-se uma precisão de ao menos 5% entre os valores obtidos na simulação e os encontrados na validação do aerofólio feita pela NASA

@@ -40,13 +40,16 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   A mmetodologia CFD foi escolhida pois facilita as solução através de um processo interativo que também é econômico. O software usado será ANSYS 2020 R1 em sua função Fluent.
   
   ## Modelagem
+  ### Condições de Contorno
   ### Geometria
-  Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY
+   O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/NACA0012airfoilcustom_print.png)
   
  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_aerofolio.png)
-  O domínio em C, como
+ 
+  O domínio em C, como usado na validação da NASA, deve ser de uma dimensão muito superior à do perfil para não gerar efeitos de parede no escoamento. Na modelagem o domínio foi determinado 20 vezes maior que a corda do aerofolio, que mede 1 metro.
+   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/dominionasa.png)
    ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_dominio.png)
   
   ### Malha

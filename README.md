@@ -43,6 +43,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ### Condições de Contorno
   ### Geometria
    O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
+  (mudar tamanho das imagens)
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/NACA0012airfoilcustom_print.png)
   
@@ -53,8 +54,10 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
    ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_dominio.png)
   
   ### Malha
+  (problemas com a malha e ansys no computador: reinstalar/ usar computador do david/ assistencia ultimo caso)
   
   ## Simulação
+  (esperando a malha)
   ### Pré-Processamento
   ### Pós-Processamento
 

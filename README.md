@@ -61,6 +61,9 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ### Malha
   (problemas com a malha e ansys no computador: reinstalar/ usar computador do david/ assistencia ultimo caso)
+ tentativa 1:  reinstalar o ansys; reinstalando o ansys o computador consegue fazer a malha, mas ela sai toda errada, mesmo com todos os sizings feitos corretamente. Após algumas tentativas fazendo e refazendo tudo do 0, a malha saiu razoavelmente aceitavel.
+ 
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/mesh.png)
   
   ## Simulação
   (esperando a malha)

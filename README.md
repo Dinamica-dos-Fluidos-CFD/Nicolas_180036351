@@ -41,6 +41,12 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ## Modelagem
   ### Condições de Contorno
+  Para o problema, foi utilizado 
+  Número de Reynolds Re= 6000000
+  Velocidade U=88,69 m/s
+  yplus<1
+  y<= 4,5e-6
+
   ### Geometria
    O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
   (mudar tamanho das imagens)

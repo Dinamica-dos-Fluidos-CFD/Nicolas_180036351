@@ -68,6 +68,18 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ## Simulação
   (esperando a malha)
   ### Pré-Processamento
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pm_general.png)
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_airproperties.png)
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_viscousmodel.png)
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_velocityinlet.png)
+  obs: coordenada y = 0.20791169081 para atender ao angulo de ataque de 12°
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_pressureoutlet.png)
+  ![]()
+  ![]()
+  ![]()
   ### Pós-Processamento
 
   ## Resultados

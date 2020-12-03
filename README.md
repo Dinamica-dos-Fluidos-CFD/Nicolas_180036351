@@ -41,7 +41,14 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ## Modelagem
   ### Geometria
-  Utilizando de sites pôde-se obter 
+  Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/NACA0012airfoilcustom_print.png)
+  
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_aerofolio.png)
+  O domínio em C, como
+   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_dominio.png)
+  
   ### Malha
   
   ## Simulação

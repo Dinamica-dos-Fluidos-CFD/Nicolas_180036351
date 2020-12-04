@@ -20,8 +20,14 @@ Reositório para Projeto em CFD sobre Escoamento em Pefil Aerodinâmico
 
 ### Objetivo
 Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012. Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
-
+  ### Perfis Aerodinâmicoa
+  Um perfil aerodinâmico é a seção transversal de uma asa ou aerofólio. Possui uma geometria característica que, quando submetida a um escoamento, provoca uma diferença de de velocidades entre seu extradorso e intradorso. Devido a diversos efeitos, entre eles o efeito Bernoulli, essa diferença implica em uma diferença de pressões resultante em uma pressão geralmente para cima. Essa distribuída ao longo da área da asa é a força de sustentação, respondável por fazer veículos aéreos voarem.
+  
+  
+  ### O fenômeno de Stall
+   O fenômeno de Stall, ou Estol em português, é o descolamento total da camada limite do extradorso de um perfil aerodinâmico. Como resultado disso, não há diferença de pressão e velocidade e se perde totalmente a força de sustentação, causando uma queda livre. Na aviação contemporânea, a sustentação normalmente é rapidamente recuperada, mas há exceções que fazem o fenômeno de Stall uma das principais causas de acidêntes aéreos especialmente em aeronaves de pequeno porte.
   ### Requisitos de Solução
+  
   Obter através da simulação computacional valores de coeficientes de arrasto e sustentação para um ângulo de ataque de 12º e identificar a ocorrência do fenômeno de stall nessa angulação
  
   ### Finalidade do Projeto

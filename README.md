@@ -136,6 +136,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_pressureoutlet.png)
   
   Reporte de arrasto:
+  
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_dragreport.png)
   
   Reporte de sustentação:
@@ -198,14 +199,18 @@ Gráfico do yplus (bem abaixo de 1):
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_yplus.png)
 
+### Análise dos resultados obtidos
+
 Valores obtidos de Cl e Cd:
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_clcd.png)
 
 Valores obtidos após a simulação
 
-**Cl**= 1.2553387
-**Cd**= 0.018362684
+**Cl**= 1.2553387 erro de 1,44%
+**Cd**= 0.018362684 erro de 15,62%
+
+A grande imprecisão no valor de Cd, pode ser explicada por cáculos levando variáveis viscosas na simulação além da imprecisão da interpolação dos dados. 
 
 ### Imagens de visualização do escoamento
 
@@ -216,5 +221,6 @@ Velocidade
 Pressão
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/poppressao.png)
+
   ### Conclusão
   Observa-se que 

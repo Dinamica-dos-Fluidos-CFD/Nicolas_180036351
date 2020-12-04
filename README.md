@@ -22,8 +22,8 @@ Reositório para Projeto em CFD sobre Escoamento em Pefil Aerodinâmico
 Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012. Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
   ### Perfis Aerodinâmicoa
   Um perfil aerodinâmico é a seção transversal de uma asa ou aerofólio. Possui uma geometria característica que, quando submetida a um escoamento, provoca uma diferença de de velocidades entre seu extradorso e intradorso. Devido a diversos efeitos, entre eles o efeito Bernoulli, essa diferença implica em uma diferença de pressões resultante em uma pressão geralmente para cima. Essa distribuída ao longo da área da asa é a força de sustentação, respondável por fazer veículos aéreos voarem.
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_anatomiaperfil.png)
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_forcasperfil.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_anatomiaperfil-small.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_forcasperfil-small.png)
   ### O fenômeno de Stall
    O fenômeno de Stall, ou Estol em português, é o descolamento total da camada limite do extradorso de um perfil aerodinâmico. Como resultado disso, não há diferença de pressão e velocidade e se perde totalmente a força de sustentação, causando uma queda livre. Na aviação contemporânea, a sustentação normalmente é rapidamente recuperada, mas há exceções que fazem o fenômeno de Stall uma das principais causas de acidêntes aéreos especialmente em aeronaves de pequeno porte.
    Exemplo de acidente aéreo por Stall: https://www.youtube.com/watch?v=_L7o_JlPg5w
@@ -58,38 +58,38 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
    O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
   (mudar tamanho das imagens)
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/NACA0012airfoilcustom_print.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/NACA0012airfoilcustom_print-small.png)
   
- ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_aerofolio.png)
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_aerofolio-small.png)
  
   O domínio em C, como usado na validação da NASA, deve ser de uma dimensão muito superior à do perfil para não gerar efeitos de parede no escoamento. Na modelagem o domínio foi determinado 20 vezes maior que a corda do aerofolio, que mede 1 metro.
-   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/dominionasa.png)
-   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_dominio.png)
+   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/dominionasa-small.png)
+   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_dominio-small.png)
   
   ### Malha
   (problemas com a malha e ansys no computador: reinstalar/ usar computador do david/ assistencia ultimo caso)
  tentativa 1:  reinstalar o ansys; reinstalando o ansys o computador consegue fazer a malha, mas ela sai toda errada, mesmo com todos os sizings feitos corretamente. Após algumas tentativas fazendo e refazendo tudo do 0, a malha saiu razoavelmente aceitavel.
  
- ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/mesh.png)
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/mesh-small.png)
   
   ## Simulação
   (esperando a malha)
   ### Pré-Processamento
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pm_general.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pm_general-small.png)
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_airproperties.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_airproperties-small.png)
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_viscousmodel.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_viscousmodel-small.png)
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_velocityinlet.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_velocityinlet-small.png)
   obs: coordenada y = 0.20791169081 para atender ao angulo de ataque de 12°
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_pressureoutlet.png)
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_dragreport.png)
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_methods.png)
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_residualmonitors.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_pressureoutlet-small.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_dragreport-small.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_methods-small.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_residualmonitors-small.png)
   ![]()
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_methods.png)
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_runcalculation.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_methods-small.png)
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_runcalculation-small.png)
   ![]()
   ![]()
   ### Pós-Processamento

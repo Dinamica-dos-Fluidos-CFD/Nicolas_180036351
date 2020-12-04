@@ -222,5 +222,19 @@ Pressão
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/poppressao.png)
 
+### Stall
+Analisando o escoamento pelas imagens geradas, vê-se que não ocorre stall neste ângulo de ataque, uma vez que não há descolamento da camada limite e não é possível observar uma queda brusca de pressão ou velocidade.
+
+### Análise paramétrica: α=30°
+A um ângulo de ataque de 30° observa-se nítidamente um stall no escoamento. Evidencia-se pela queda brutal de velocidade e pressão após um nítido descolamento da camada limite.
+
+Velocidade
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_30velocidade.png)
+
+Pressão
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_30pressao.png)
+
   ### Conclusão
-  Observa-se que 
+  Observa-se que os resultados da análise por CFX

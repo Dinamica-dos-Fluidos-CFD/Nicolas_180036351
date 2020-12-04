@@ -20,7 +20,7 @@ Reositório para Projeto em CFD sobre Escoamento em Pefil Aerodinâmico
 
 ### Objetivo
 Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012. Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
-  ### Perfis Aerodinâmicoa
+  ### Perfis Aerodinâmicos
   Um perfil aerodinâmico é a seção transversal de uma asa ou aerofólio. Possui uma geometria característica que, quando submetida a um escoamento, provoca uma diferença de de velocidades entre seu extradorso e intradorso. Devido a diversos efeitos, entre eles o efeito Bernoulli, essa diferença implica em uma diferença de pressões resultante em uma pressão geralmente para cima. Essa distribuída ao longo da área da asa é a força de sustentação, respondável por fazer veículos aéreos voarem.
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_anatomiaperfil.png)
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_forcasperfil.png)
@@ -46,35 +46,42 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ### Metodologia
   A mmetodologia CFD foi escolhida pois facilita as solução através de um processo interativo que também é econômico. O software usado será ANSYS 2020 R1 em sua função Fluent.
   
-  ## Modelagem
-  ### Condições de Contorno
-  Para o problema, foi utilizado 
-  Número de Reynolds Re= 6000000
-  Velocidade U=88,69 m/s
-  yplus<1
-  y<= 4,5e-6
-
-  ### Geometria
-   O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
+  ## Materiais e Métodos
+  ### Pré-Processamento
+  #### Domínio e Geometria
+  
+  É necessário que o domínio de cálculo seja extremamente preciso nos arredores da superfície do aerfolio, pois é onde se encontra tudo que queremos analisar. Para isso foi definido um y+ de 4,5e-6, o que caracteriza elementos extremamente pequenos, trazendo um detalhamento satisfatório para as proporções do problema.
+  O domínio em C, como usado na validação da NASA, deve ser de uma dimensão muito superior à do perfil para não gerar efeitos de parede no escoamento. Na modelagem o domínio foi determinado 20 vezes maior que a corda do aerofolio, que mede 1 metro, gerando uma geometria adequada pra a solução.
+  O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
   (mudar tamanho das imagens)
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/NACA0012airfoilcustom_print.png)
   
  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_aerofolio.png)
  
-  O domínio em C, como usado na validação da NASA, deve ser de uma dimensão muito superior à do perfil para não gerar efeitos de parede no escoamento. Na modelagem o domínio foi determinado 20 vezes maior que a corda do aerofolio, que mede 1 metro.
+  
    ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/dominionasa.png)
    ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_dominio.png)
   
-  ### Malha
-  (problemas com a malha e ansys no computador: reinstalar/ usar computador do david/ assistencia ultimo caso)
- tentativa 1:  reinstalar o ansys; reinstalando o ansys o computador consegue fazer a malha, mas ela sai toda errada, mesmo com todos os sizings feitos corretamente. Após algumas tentativas fazendo e refazendo tudo do 0, a malha saiu razoavelmente aceitavel.
- 
- ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/mesh.png)
+  #### Malha
+  A malha usada será estruturada composta por quadriláteros e analisadas através de elementos finitos. A divisão dos elentos aumenta através da função BIAS, com mais divisões próximo ao aerofólio. 
+  #### informações de entrada (Inputs)  
+  Número de Reynolds Re= 6000000
+  Velocidade U=88,69 m/s
+  yplus<1
+  y<= 4,5e-6
+  Ãngulo de ataque α= 12°
+  Componentes da direção do fluxo x= cos(12)= 0.97814760073; y= sin(12)= 0.20791169081
   
-  ## Simulação
-  (esperando a malha)
-  ### Pré-Processamento
+  Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão?
+  O projeto deverá conter nesta etapa:
+
+  Descrição do pré-processamento feito no ANSYS.
+  Imagens da malha de cálculo do problema.
+  
+  #### Verificação
+  Para conferir a eficácia do pré-processamento e da modelagem foi realizada uma simulação com valor de angulo de ataque α= 0° e comparado os resultados tanto dos vídeos tutoriais quanto dos fornecidos pela NASA. O resultato foi satisfatório, dando sequência às simulações com α= 12º
+  #### Definições para o processamento
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pm_general.png)
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_airproperties.png)
@@ -82,7 +89,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_viscousmodel.png)
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_velocityinlet.png)
-  obs: coordenada y = 0.20791169081 para atender ao angulo de ataque de 12°
+  
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_pressureoutlet.png)
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_dragreport.png)
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_methods.png)
@@ -92,7 +99,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_runcalculation.png)
   ![]()
   ![]()
-  ### Pós-Processamento
 
-  ## Resultados
+  ## Resultados e Análise 
   ### Conclusão
+  

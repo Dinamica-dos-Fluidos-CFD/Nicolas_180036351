@@ -22,7 +22,7 @@ Reositório para Projeto em CFD sobre Escoamento em Pefil Aerodinâmico
 Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do semestre 2020/2 da disciplina de Dinâmica dos Fluidos na Universidade de Brasília foi proposta a realização de um projeto em CFD através do software Ansys. O objetivo é simular um escoamento através de um perfil aerodinâmico NACA 0012. Por fim, com os dados obtidos, determinar cenários de comportamento aerodinâmico do perfil.
    
   ### Requisitos de Solução
-  Obter através da simulação computacional valores de coeficientes de arrasto e sustentação para um ângulo de ataque de 12º e identificar a ocorrência do fenômeno de stall nessa angulação
+  Obter através da simulação computacional valores de coeficientes de arrasto e sustentação para um ângulo de ataque de 12º e identificar se há ocorrência do fenômeno de stall nessa angulação
  
   ### Finalidade do Projeto
   Com finalidade acadêmica, o projeto visa introduzir os alunos à Fluidodinâmica Computacional (CFD) e a solução de problemas no campo da Dinâmica dos Fluidos.
@@ -75,44 +75,48 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ### informações de entrada (Inputs)  
   
   Número de Reynolds **Re**= 6000000
+  
   Velocidade **U**=88,69 m/s
-  **yplus**<1
+  
   **y**<= 4,5e-6
-  Ãngulo de ataque **α**= 12°
-  Componentes da direção do fluxo **x**= cos(12)= 0.97814760073; **y**= sin(12)= 0.20791169081
+ 
+ Ãngulo de ataque **α**= 12°
+  
+ Componentes da direção do fluxo **x**= cos(12)= 0.97814760073; **y**= sin(12)= 0.20791169081
   
   
  ### Disponibilidade Computacional
-  Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão?
-  (inserir print do sistema)
+ 
+  **RAM**= 8Gb
   
+  **Processador**= intel core i7 6700hq @ 2.60ghz (4 núcleos)
+  
+ **GPU**= NVIDEA GEforce GTX 960m
+ 
+ **Softwares**- Windowns 10 Home 64bits; Ansys 2020 R2
+ 
+ 
   
   ### Verificação
   Para conferir a eficácia do pré-processamento e da modelagem foi realizada uma simulação com valor de angulo de ataque α= 0° e comparado os resultados tanto dos vídeos tutoriais quanto dos fornecidos pela NASA. O resultato foi satisfatório, dando sequência às simulações com α= 12º
   
   
   ### Definições para o processamento
-  As próximas imagens mostram como foi feito o pré-processamento no Ansys Fluent.
-  
-  Geral:
-  
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pm_general.png)
   
   Propriedades do ar:
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_airproperties.png)
+ **Densidade**= 1,225 kg/m³
+ **Viscosidade**= 1,7894e-5 kg/m-s
   
-  Viscous Model:
-  
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_viscousmodel.png)
-  
-  Velocidade na entrada:
+  Para a velocidade na entrada, foram colocados os valores para x e y que atendam o àngulo de ataque de 12° tal como o módulo da velocidade **U**=88,69 m/s:
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_velocityinlet.png)
   
-  Pressão na saída:
+  Para pressão na saída foram colocados os valores para x e y que atendam o àngulo de ataque de 12°:
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_pressureoutlet.png)
+  
+  Para o reporte de arrasto e sustentação, foram estabelecidas as componentes da força desejadas, para cumprir com o ângulo de ataque a 12°, o arrasto e a sustentação devem estar repectivamente paralelo e perpendicular ao fluxo, e não à coda do perfil. Também é selecionada a superfície de estudo desejada, no caso o aerofólio.
   
   Reporte de arrasto:
   
@@ -122,15 +126,11 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_liftreport.png)
   
-  Métodos:
-  
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_methods.png)
-  
-  Monitores residuais:
+  Para os monitores residuais foi estabelecido um critério muito preciso da grau de grandeza 1e-6 para continuidade, já para os outros resíduos foi optado por não selecioná-los, focando assim exclusivamente na continuidade:
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_residualmonitors.png)
   
-  Rodar simulação:
+  Para rodar a simulação, foram colocadas 5000 interações com o intuito de ter certeza da exatidão dos resultados:
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_runcalculation.png)
 
@@ -148,16 +148,19 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   **Cd**= 0,015882
   
 
-### Convergência
-Obteve-se uma convergência absolutamente adequada, como pode-se ver nos gráficos.
+### Report Plot
 
-Convergência do cálculo do coeficiente de arrasto:
+Report Plot do coeficiente de arrasto:
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_cdgraph.png)
 
-Convergência do cálculo do coeficiente de sustentação:
+Report Plot do coeficiente de sustentação:
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_clgraph.png)
+
+### Convergência
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop1-residuos.png)
 
 ### Tempo de simulação
 30min
@@ -174,9 +177,13 @@ Valores obtidos após a simulação
 **Cl**= 1.2553387 erro de 1,44%
 **Cd**= 0.018362684 erro de 15,62%
 
-A grande imprecisão no valor de Cd, pode ser explicada por cáculos levando variáveis viscosas na simulação além da imprecisão da interpolação dos dados. 
+Observa-se uma boa precisão do valor de Cl, o que indica que a simulação atendeu à expectativa e trouxe resultados próximos a validadção da NASA em processamentos muito mais específicos. A imprecisão no valor de Cd, maior que a definida aceitável na modelagem, de 5%, pode ser explicada por cáculos levando variáveis viscosas na simulação e, principalmente, pela interpolação dos dados que apesar de prática, nem sempre traz uma precisão alta em relação ao valor desejada. Levando isso em consideração, pode-se dizer que o erro de 15,62% é aceitável, e atende aos requisitos, trazendo valores próximos da realidade, uma vez que se encontra entre os valores de Cd para 10° e 15° disponibilizados pela NASA. 
+
+
 
 ### Imagens de visualização do escoamento
+
+O comportammento do fluxo representa fielmente o comportamento da pressão e da velocidade em escoamentos em perfis aerodinâmicos. Um perfil aerodinâmico possui uma geometria característica que, quando submetida a um escoamento, provoca uma diferença de velocidades entre seu extradorso e intradorso. Devido a diversos efeitos, entre eles o efeito Bernoulli, essa diferença implica em uma diferença de pressões resultante em uma pressão geralmente para cima. Essa, distribuída ao longo da área da asa, é a força de sustentação. Na simulação, velocidade é maior no extradorso e menor no intradorso e a pressão é maior no intradorso e menor no extradorso, comportamento coerente com a realidade.
 
 Velocidade
 
@@ -187,10 +194,14 @@ Pressão
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/poppressao.png)
 
 ### Stall
-Analisando o escoamento pelas imagens geradas, vê-se que não ocorre stall neste ângulo de ataque, uma vez que não há descolamento da camada limite e não é possível observar uma queda brusca de pressão ou velocidade.
+Analisando o escoamento pelas imagens geradas, vê-se que não ocorre stall neste ângulo de ataque. Principalmente na visualização da velocidade é fácil ver que não há descolamento da camada limite. É possível notar um feixe azul, que representa uma queda na velocidade, essa é a camada limite do escomaento na superfície do aerofólio. Vale acrescentar que o stol gera uma turbulência e, pela visualização da pressão é possível notar que ela é uniforme ao lonfo dos arredores da superfície do aerofólio.
 
 ### Análise paramétrica: α=30°
-A um ângulo de ataque de 30° observa-se nítidamente um stall no escoamento. Evidencia-se pela queda brutal de velocidade e pressão após um nítido descolamento da camada limite.
+Há queda brutal de velocidade e pressão, sendo essas aproximadamente 0, o que significa um descolamento da camada limite. Pode-se notar que como resultado disso que o valor de Cd é quase 30 vezes o valor a 12º, enquanto o Cl é apenas metade. Essa configuração pode ser útil quando a internção é freiar como, por exemplo, no pouso de uma aeronave.
+
+Valores de Cd e Cl gerados:
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_30cdcl.png)
 
 Velocidade
 

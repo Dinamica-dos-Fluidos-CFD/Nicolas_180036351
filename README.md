@@ -66,7 +66,6 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   É necessário que o domínio de cálculo seja extremamente preciso nos arredores da superfície do aerfolio, pois é onde se encontra tudo que queremos analisar. Para isso foi definido um y+ de 4,5e-6, o que caracteriza elementos extremamente pequenos, trazendo um detalhamento satisfatório para as proporções do problema.
   O domínio em C, como usado na validação da NASA, deve ser de uma dimensão muito superior à do perfil para não gerar efeitos de parede no escoamento. Na modelagem o domínio foi determinado 20 vezes maior que a corda do aerofolio, que mede 1 metro, gerando uma geometria adequada pra a solução.
   O perfil NACA 0012 tem como suas principais características a simeteria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofolio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerfolio.
-  (mudar tamanho das imagens)
   
   Site que fornece on pontos do aerofólio:
   
@@ -225,4 +224,4 @@ Pressão
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_30pressao.png)
 
   ### Conclusão
-  Observa-se que os resultados da análise por CFX
+  Observa-se que os resultados da análise por CFD são muito próximos da realidade. Inclusive o valor de Cd, em que houve um destoamento maior que o resultado esperado, está dentro dos limites desejados (entre os valores de 10° e 15°). O comportammento do fluxo representa fielmente o comportamento da pressão e da velocidade em escoamentos em perfis aerodinâmicos. Com rapidez e baixo esforço, o CFD mostrou-se eficiente em analisar o problema com baixo custo e praticidade. Os parâmetros podem ser facilmente trocados para análises em condições diferentes, como com o ângulo de ataque de 30°.

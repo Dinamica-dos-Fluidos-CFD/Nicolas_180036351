@@ -94,6 +94,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   
   ### informações de entrada (Inputs)  
+  
   Número de Reynolds **Re**= 6000000
   Velocidade **U**=88,69 m/s
   **yplus**<1
@@ -166,8 +167,6 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   **Cl**= 1,27298
   **Cd**= 0,015882
   
- O histórico de convergência do cálculo está adequado?
-Quanto tempo a simulação está levando para ser processada? A simulação levou cerca de 30min para ser processada
 Os resíduos estão em valores aceitáveis?
 A simulação fornece resultados qualitativos?
 É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
@@ -178,7 +177,44 @@ O projeto deverá conter nesta etapa:
 
 Análise dos resultados obtidos.
 Comparação dos resultados numéricos com os resultados analíticos de cada problema.
-Imagens de visualização do escoamento.
 Análise dos resultados obtidos pelo estudo paramétrico
+
+
+### Convergência
+Obteve-se uma convergência absolutamente adequada, como pode-se ver nos gráficos.
+
+Convergência do cálculo do coeficiente de arrasto:
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_cdgraph.png)
+
+Convergência do cálculo do coeficiente de sustentação:
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_clgraph.png)
+
+### Tempo de simulação
+30min
+
+Gráfico do yplus (bem abaixo de 1):
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_yplus.png)
+
+Valores obtidos de Cl e Cd:
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_clcd.png)
+
+Valores obtidos após a simulação
+
+**Cl**= 1.2553387
+**Cd**= 0.018362684
+
+### Imagens de visualização do escoamento
+
+Velocidade
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/popvelocidade.png)
+
+Pressão
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/poppressao.png)
   ### Conclusão
-  
+  Observa-se que 

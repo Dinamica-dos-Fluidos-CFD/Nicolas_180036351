@@ -168,18 +168,6 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   **Cl**= 1,27298
   **Cd**= 0,015882
   
-Os resíduos estão em valores aceitáveis?
-A simulação fornece resultados qualitativos?
-É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
-Os resultados estão de acordo com a realidade física do escoamento?
-
-
-O projeto deverá conter nesta etapa:
-
-Análise dos resultados obtidos.
-Comparação dos resultados numéricos com os resultados analíticos de cada problema.
-Análise dos resultados obtidos pelo estudo paramétrico
-
 
 ### Convergência
 Obteve-se uma convergência absolutamente adequada, como pode-se ver nos gráficos.

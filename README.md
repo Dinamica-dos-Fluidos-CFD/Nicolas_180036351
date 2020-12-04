@@ -26,8 +26,9 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ### O fenômeno de Stall
    O fenômeno de Stall, ou Estol em português, é o descolamento total da camada limite do extradorso de um perfil aerodinâmico. Como resultado disso, não há diferença de pressão e velocidade e se perde totalmente a força de sustentação, causando uma queda livre. Na aviação contemporânea, a sustentação normalmente é rapidamente recuperada, mas há exceções que fazem o fenômeno de Stall uma das principais causas de acidêntes aéreos especialmente em aeronaves de pequeno porte.
+   Exemplo de acidente aéreo por Stall: https://www.youtube.com/watch?v=_L7o_JlPg5w
+   
   ### Requisitos de Solução
-  
   Obter através da simulação computacional valores de coeficientes de arrasto e sustentação para um ângulo de ataque de 12º e identificar a ocorrência do fenômeno de stall nessa angulação
  
   ### Finalidade do Projeto

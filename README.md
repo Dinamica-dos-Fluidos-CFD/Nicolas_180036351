@@ -126,7 +126,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_liftreport.png)
   
-  Para os monitores residuais foi estabelecido um critério muito preciso da grau de grandeza 1e-6 para continuidade, já para os outros resíduos foi optado por não selecioná-los, focando assim exclusivamente na continuidade:
+  Para os monitores residuais foi estabelecido um critério muito preciso da grau de grandeza 1e-6 para continuidade, já para os outros resíduos foi optado por não selecioná-los, focando assim exclusivamente na continuidade. Esta é a diferença entra a mudança nos resultados entre cada interação numérica:
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/prm_residualmonitors.png)
   
@@ -148,7 +148,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   **Cd**= 0,015882
   
 
-### Report Plot
+### Gráficos Gerados
 
 Report Plot do coeficiente de arrasto:
 
@@ -158,7 +158,7 @@ Report Plot do coeficiente de sustentação:
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop_clgraph.png)
 
-### Convergência
+ Resíduos
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/pop1-residuos.png)
 
@@ -194,7 +194,7 @@ Pressão
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/poppressao.png)
 
 ### Stall
-Analisando o escoamento pelas imagens geradas, vê-se que não ocorre stall neste ângulo de ataque. Principalmente na visualização da velocidade é fácil ver que não há descolamento da camada limite. É possível notar um feixe azul, que representa uma queda na velocidade, essa é a camada limite do escomaento na superfície do aerofólio. Vale acrescentar que o stol gera uma turbulência e, pela visualização da pressão é possível notar que ela é uniforme ao lonfo dos arredores da superfície do aerofólio.
+Analisando o escoamento pelas imagens geradas, vê-se que não ocorre stall neste ângulo de ataque. Principalmente na visualização da velocidade é fácil ver que não há descolamento da camada limite. É possível notar um feixe azul, que representa uma queda na velocidade, essa é a camada limite do escomaento na superfície do aerofólio. Vale acrescentar que o stol gera uma turbulência e, pela visualização da pressão é possível notar que ela é uniforme ao longo dos arredores da superfície do aerofólio.
 
 ### Análise paramétrica: α=30°
 Há queda brutal de velocidade e pressão, sendo essas aproximadamente 0, o que significa um descolamento da camada limite. Pode-se notar que como resultado disso que o valor de Cd é quase 30 vezes o valor a 12º, enquanto o Cl é apenas metade. Essa configuração pode ser útil quando a internção é freiar como, por exemplo, no pouso de uma aeronave.

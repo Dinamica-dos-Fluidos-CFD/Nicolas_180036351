@@ -43,7 +43,7 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   ## Pré-Processamento
   ### Domínio e Geometria
   
-  É necessário que o domínio de cálculo seja extremamente preciso nos arredores da superfície do aerofólio, pois é onde se encontra tudo que queremos analisar. Para isso foi definido um y+ de 4,5e-6, o que caracteriza elementos extremamente pequenos, trazendo um detalhamento satisfatório para as proporções do problema.
+  É necessário que o domínio de cálculo seja extremamente preciso nos arredores da superfície do aerofólio, pois é onde se encontra tudo que queremos analisar. Para isso foi definido um y de 4,5e-6, o que caracteriza elementos extremamente pequenos, trazendo um detalhamento satisfatório para as proporções do problema.
   O domínio em C, como usado na validação da NASA, deve ser de uma dimensão muito superior à do perfil para não gerar efeitos de parede no escoamento. Na modelagem o domínio foi determinado 20 vezes maior que a corda do aerofólio, que mede 1 metro, gerando uma geometria adequada para a solução.
   O perfil NACA 0012 tem como suas principais características a simetria e a espessura a 12% da corda. Utilizando de sites pôde-se obter os pontos que representam o aerofólio no plano XY, inserindo esses pontos no Geometry Modeler, obtém-se o aerofólio.
   
@@ -56,6 +56,8 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/geometria_aerofolio.png)
  
  Domínio usado pela NASA:
+ 
+ Fonte: https://turbmodels.larc.nasa.gov/naca0012_val.html
  
  ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/dominionasa.png)
  
@@ -141,6 +143,8 @@ Com o intuito de aplicar o conhecimento adquirido durante as aulas ao longo do s
   
   Tabela de valores fornecida pela NASA
   
+  Fonte: https://turbmodels.larc.nasa.gov/naca0012_val_sa.html
+  
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/Nicolas_180036351/blob/master/intro_valoresnasa.png)
       
   Para α= 12°:
@@ -216,4 +220,4 @@ Pressão
 
 ## Refrências bibliográficas
 
-Mecânica dos Fluidos - F. M. White
+Mecânica dos Fluidos - F. M. White; Vectors, Tensors and the Basic Equations of Fluid Mechanics - R. Aris
